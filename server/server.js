@@ -13,6 +13,11 @@ app.get("/", (req, res) => {
 
 app.use("/weather", weatherRouter)
 
-app.listen(process.env.PORT, () => console.log(`server is listening to port ${process.env.PORT}`));
+const port = process.env.PORT || 4000;
 
-/* adding some comment to change something */
+app.listen(port, () => console.log(`server is listening to port ${port}`));
+
+/* 
+url for the frontend:
+https://weather-app-8ukq.onrender.com
+ */

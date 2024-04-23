@@ -1,10 +1,12 @@
 import './App.css'
+import Weather from './assets/components/Weather'
 
 function App() {
 
   return (
     <>
-      <h1>deploy!</h1>
+      <h1>How is the weather in your city today?</h1>
+      <Weather />
     </>
   )
 }
