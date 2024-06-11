@@ -23,7 +23,7 @@ function Weather() {
         /* GET request in this case! getting data from an external url! */
 
         try {
-            const response = await fetch(`https://weather-app-8ukq.onrender.com/weather/${input}`);
+            const response = await fetch(`${import.meta.env.VITE_API}/weather/${input}`);
 
             if (response.ok) {
                 const data = await response.json();
